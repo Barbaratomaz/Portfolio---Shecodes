@@ -35,17 +35,14 @@ h3 {
 }
 
 p {
-  background: var(--secondary-color);
-  padding: 20px;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
 }
 
 .navigation-links {
   display: flex;
-  margin-top: 40px;
+  margin: 40px 0;
   justify-content: center;
 }
 
@@ -55,6 +52,7 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .contact-link {
@@ -93,4 +91,34 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  h1,
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .navigation-links {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .navigation-links a {
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .email-link {
+    font-size: 24px;
+  }
 }
